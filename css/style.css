@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/59639c8d5f21a2c9a5c3b134dac90c5a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selection {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
+
+.main {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.selection input {
+    width: 30px;
+}
+
+.selection button {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.info {
+    text-align: center;
+}
+
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 1rem 1rem 2rem;
+    max-width: 350px;
+    background-color: darkslategray;
+}
+
+.result-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
