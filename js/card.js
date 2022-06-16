@@ -1,19 +1,25 @@
-import { result } from "./app.js";
+import { result, spinnerDiv } from "./app.js";
 
 export const showCard = (searchId) => {
 
-    cleanHTML()
+    cleanHTML();
 
     const { ingredientes, nombre, precio, img } = searchId;
     const div = document.createElement('div');
-    div.classList.add('result-container');
-    div.innerHTML = `
+
+    spinnerDiv.classList.remove('hidden')
+
+    setTimeout(() => {
+        spinnerDiv.classList.add('hidden')
+        div.classList.add('result-container');
+        div.innerHTML = `
                     <h2>${nombre}</h2>
                     <p>Ingredientes: ${ingredientes}</p>
                     <p>Precio: $${precio}</p>
                     <img src='${img}'>
-    `
-    result.appendChild(div);
+                    `
+        result.appendChild(div);
+    }, 2000);
 };
 
 export const cleanHTML = () => {

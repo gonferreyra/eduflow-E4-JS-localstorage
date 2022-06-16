@@ -35,7 +35,7 @@ export const pizzas = [{
 },
 {
     id: 6,
-    nombre: "fugazza",
+    nombre: "fugazzeta",
     ingredientes: "cebolla, muzzarella, aceitunas",
     precio: 1300,
     img: 'https://biancapizzaria.com.br/wp-content/uploads/2015/06/800c1-700x450.png'

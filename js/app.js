@@ -6,9 +6,10 @@ import { errorMessage } from "./error.js";
 const btnInput = document.querySelector('.btnInput');
 export const result = document.querySelector('.container');
 const numberInput = document.querySelector('.numberInput');
+export const spinnerDiv = document.querySelector('.spinner');
 
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     // Send array to localstorage
     localStorage.setItem('pizzas', JSON.stringify(pizzas));
     btnInput.addEventListener('click', searchLocalStorage);
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const searchLocalStorage = () => {
-
+    // Traemos localstorage y lo almacenamos en una variable local como array con el JSON.parse
     let pizzasFromLocal = JSON.parse(localStorage.getItem('pizzas'));
     // console.log(pizzasFromLocal);
 
@@ -33,6 +34,5 @@ const searchLocalStorage = () => {
         return;
     }
 
-    showCard(searchId);
-
+    showCard(searchId)
 };
