@@ -1,5 +1,5 @@
 import { pizzas } from "./array.js";
-import { showCard } from "./card.js";
+import { cleanHTML, showCard } from "./card.js";
 import { errorMessage } from "./error.js";
 
 // Variables

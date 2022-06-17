@@ -7,19 +7,28 @@ export const showCard = (searchId) => {
     const { ingredientes, nombre, precio, img } = searchId;
     const div = document.createElement('div');
 
-    spinnerDiv.classList.remove('hidden')
-
-    setTimeout(() => {
-        spinnerDiv.classList.add('hidden')
-        div.classList.add('result-container');
-        div.innerHTML = `
+    div.classList.add('result-container');
+    div.innerHTML = `
                     <h2>${nombre}</h2>
                     <p>Ingredientes: ${ingredientes}</p>
                     <p>Precio: $${precio}</p>
                     <img src='${img}'>
                     `
-        result.appendChild(div);
-    }, 2000);
+    result.appendChild(div);
+
+    // spinnerDiv.classList.remove('hidden')
+
+    // setTimeout(() => {
+    //     spinnerDiv.classList.add('hidden')
+    //     div.classList.add('result-container');
+    //     div.innerHTML = `
+    //                 <h2>${nombre}</h2>
+    //                 <p>Ingredientes: ${ingredientes}</p>
+    //                 <p>Precio: $${precio}</p>
+    //                 <img src='${img}'>
+    //                 `
+    //     result.appendChild(div);
+    // }, 2000);
 };
 
 export const cleanHTML = () => {
